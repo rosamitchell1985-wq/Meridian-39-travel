@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Systematic downloading of the destination libraries is not permitted.
+# See the Terms of Service, section 5.
+Crawl-delay: 1
+
+Sitemap: https://www.meridianfieldguide.com/sitemap.xml

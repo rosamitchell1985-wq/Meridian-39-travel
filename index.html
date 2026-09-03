@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meridian Field Guide | Trip Organizer and Travel Planner for US Travelers</title>
+<meta name="description" content="Meridian Field Guide is a trip organizer and travel planner built for American travelers. Build day-by-day itineraries with time-stamped stops, travel time and daily cost estimates. Free for two trips.">
+<link rel="canonical" href="https://www.meridianfieldguide.com/">
+<meta name="theme-color" content="#FBFAF7">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meridian Field Guide">
+<meta property="og:title" content="Meridian Field Guide | Trip Organizer and Travel Planner">
+<meta property="og:description" content="Day-by-day itineraries with time-stamped stops, travel time between them and honest daily cost estimates in US dollars.">
+<meta property="og:url" content="https://www.meridianfieldguide.com/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&h=630&q=80&auto=format&fit=crop">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Meridian Field Guide | Trip Organizer and Travel Planner">
+<meta name="twitter:description" content="Day-by-day itineraries with time-stamped stops, travel time and honest daily cost estimates.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&h=630&q=80&auto=format&fit=crop">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.meridianfieldguide.com/#organization",
+      "name": "Meridian Field Guide, Inc.",
+      "url": "https://www.meridianfieldguide.com/",
+      "logo": "https://www.meridianfieldguide.com/assets/apple-touch-icon.png",
+      "email": "hello@meridianfieldguide.com",
+      "telephone": "+1-503-894-2170",
+      "foundingDate": "2016-04-11",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1104 NE Failing Street, Suite 210",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "postalCode": "97212",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "telephone": "+1-503-894-2170",
+        "email": "support@meridianfieldguide.com",
+        "areaServed": "US",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.meridianfieldguide.com/#website",
+      "url": "https://www.meridianfieldguide.com/",
+      "name": "Meridian Field Guide",
+      "publisher": { "@id": "https://www.meridianfieldguide.com/#organization" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Meridian Trip Planner",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "Web browser",
+      "url": "https://www.meridianfieldguide.com/trip-planner.html",
+      "offers": [
+        { "@type": "Offer", "name": "Field Notes (free)", "price": "0", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Pro monthly", "price": "9.00", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Pro annual", "price": "72.00", "priceCurrency": "USD" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============================ MASTHEAD ============================ -->
+<header class="masthead">
+  <div class="masthead__utility">
+    <div class="wrap">
+      <p>Issue No.&nbsp;14 &nbsp;·&nbsp; Fall 2026 &nbsp;·&nbsp; Portland, Oregon</p>
+      <p class="utility-links">
+        <a href="tools.html">Free Tools</a>
+        <a href="faq.html">FAQ</a>
+        <a href="testimonials.html">Reader Reviews</a>
+      </p>
+    </div>
+  </div>
+  <div class="masthead__main">
+    <div class="wrap">
+      <a class="wordmark" href="index.html" aria-label="Meridian Field Guide, home">
+        <span class="wordmark__name">Meridian</span>
+        <span class="wordmark__sub">Field Guide &middot; Est. 2016</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="nav-toggle__label-open">Menu</span>
+        <span class="nav-toggle__label-close">Close</span>
+      </button>
+    </div>
+  </div>
+  <nav id="primary-nav" aria-label="Primary">
+    <div class="wrap">
+      <ul class="nav-list">
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="trip-planner.html">Trip Planner</a></li>
+        <li class="has-sub">
+          <a href="destinations.html">Destinations</a>
+          <ul class="subnav">
+            <li><a href="destination-iceland.html">Iceland</a></li>
+            <li><a href="destination-kyoto.html">Kyoto, Japan</a></li>
+            <li><a href="destination-national-parks.html">National Parks Road Trip</a></li>
+            <li><a href="destinations.html">All destinations</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="itineraries.html">Itineraries</a>
+          <ul class="subnav">
+            <li><a href="itinerary-iceland-ring-road.html">Iceland Ring Road, 7 days</a></li>
+            <li><a href="itinerary-kyoto-kansai.html">Kyoto and Kansai, 8 days</a></li>
+            <li><a href="itinerary-utah-mighty-five.html">Utah Mighty 5, 7 days</a></li>
+            <li><a href="itineraries.html">All sample itineraries</a></li>
+          </ul>
+        </li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="travel-agents.html">For Agents</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-only-mobile"><a href="tools.html">Free Tools</a></li>
+        <li class="nav-only-mobile"><a href="faq.html">FAQ</a></li>
+        <li class="nav-only-mobile"><a href="testimonials.html">Reader Reviews</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero hero--tall grain" data-parallax aria-labelledby="hero-title">
+  <div class="hero__media">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=2000&q=80&auto=format&fit=crop"
+         alt="A two-lane highway running between towering red sandstone walls in the American Southwest at dusk"
+         width="2000" height="1333" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero__inner">
+    <div class="wrap reveal-lines">
+      <p class="kicker">The Trip Organizer Issue</p>
+      <h1 id="hero-title">Every good trip was <br class="hero-break">a piece of writing first.</h1>
+      <p class="standfirst">Meridian turns the mess of tabs, screenshots and group chats into a day-by-day plan with real times, real distances and an honest cost in dollars.</p>
+      <p class="cta-row">
+        <a class="cta" href="trip-planner.html">Build a trip, free</a>
+        <a class="cta" href="how-it-works.html">See how it works</a>
+      </p>
+      <p class="hero__credit">Utah State Route 128 above the Colorado River, photographed on a fall afternoon. <span class="credit-name">Photograph via Unsplash.</span></p>
+      <p class="colophon">
+        <span>Meridian Field Guide</span>
+        <span>Issue No.&nbsp;14</span>
+        <span>Portland, Oregon &middot; 08/18/2026</span>
+        <span class="colophon__page">Page 1</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ THE CASE ============================ -->
+<section class="band" aria-labelledby="case-title">
+  <div class="wrap">
+    <div class="cols">
+      <div class="cols__main">
+        <p class="kicker">From the editors</p>
+        <h2 id="case-title">The planning is the trip, whether you admit it or not</h2>
+        <div class="article-body">
+          <p class="dropcap">The average American worker takes eleven days of paid time off a year and spends a startling share of them in an airport, on a shuttle bus, or standing outside a museum that closed forty minutes ago. That is not a failure of enthusiasm. It is a failure of documentation. Most trips are planned across eight browser tabs, three screenshots, a note app, one group chat and a rental car confirmation nobody can find on the morning of departure.</p>
+
+          <p>Meridian Field Guide exists because a trip plan is a document, and documents deserve to be typeset properly. You tell us where you are going, how many days you have and what you actually enjoy. We lay out each day as a page: stops with real clock times, the travel time between them, the admission price of each, and a running cost for the day in US dollars.</p>
+
+          <p>Nothing here is generated from nowhere. Every stop in our libraries has been walked, driven or eaten by an editor or a contributing writer, and every entry carries the practical detail that only shows up in person. Which trailhead has parking at 7 a.m. Which museum needs a timed ticket booked eleven days out. Which waterfall will soak you to the knee if you approach from the left.</p>
+
+          <p>We are a small, independent publication with a software habit. That combination shapes what we build. The planner is free for your first two trips because most people take one or two real trips a year, and charging them for it would be rude. Travelers who plan constantly pay for Pro. Some hotels and tour operators pay us a commission when a booking starts here, and we say so on the page where it happens, every time.</p>
+        </div>
+      </div>
+      <aside class="cols__aside">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=900&q=80&auto=format&fit=crop"
+               alt="A paper road map spread on a table with a leather satchel, field notebook, pencil and camera lens resting on it"
+               width="900" height="600" loading="lazy" decoding="async">
+          <figcaption>The desk stage of a trip, before anything has been booked and everything is still possible.
+            <span class="credit">Photograph via Unsplash</span>
+          </figcaption>
+        </figure>
+        <blockquote class="pullquote">
+          A plan is not a cage. It is the reason you have time to sit down for two hours in the afternoon.
+          <cite>Dana Okonjo, founding editor</cite>
+        </blockquote>
+      </aside>
+    </div>
+
+    <p class="colophon">
+      <span>Meridian Field Guide</span>
+      <span>Issue No.&nbsp;14</span>
+      <span>Portland, Oregon &middot; 08/18/2026</span>
+      <span class="colophon__page">Page 2</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ HOW IT WORKS ============================ -->
+<section class="band band--tint" aria-labelledby="steps-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="steps-title">Four steps, about nine minutes</h2>
+      <p>The planner is a genuine ordered process, so we have numbered it. Each step feeds the next one, and you can go back and change any of them without losing the days you have already built.</p>
+    </div>
+
+    <ol class="sequence reveal">
+      <li>
+        <div>
+          <h3>Describe the trip in plain terms</h3>
+          <p>Destination, departure date in MM/DD/YYYY, number of days, how many people are coming, and whether you want a relaxed, balanced or packed pace. Nine fields. No account required to start.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Tell us what you actually like</h3>
+          <p>Outdoors, food, history, art, nightlife, traveling with children. The planner weights the stop library toward what you picked instead of handing everyone the same top ten list.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Read the day plans and cut what you do not want</h3>
+          <p>Every day arrives as a typeset page with time-stamped stops, transit notes between them and a daily cost. Remove a stop and the clock and the budget both recalculate.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Save it, print it, or hand it to a human</h3>
+          <p>Free accounts keep two trips. Pro adds unlimited trips, offline PDF export and collaborator access. If you want an editor to review the whole thing, our custom itinerary service is a one-time fee.</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="cta-row"><a class="cta" href="how-it-works.html">Read the full method</a> <a class="cta" href="trip-planner.html">Open the planner</a></p>
+
+    <p class="colophon">
+      <span>Meridian Field Guide</span>
+      <span>Issue No.&nbsp;14</span>
+      <span>Portland, Oregon &middot; 08/18/2026</span>
+      <span class="colophon__page">Page 3</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ SPECIMEN DAY PLAN ============================ -->
+<section class="band" aria-labelledby="specimen-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="specimen-title">A specimen page</h2>
+      <p>This is what the planner prints for a balanced-pace first day in Kyoto, for two travelers on a moderate budget. Not a mock-up. It is the same layout the tool produces.</p>
+    </div>
+
+    <div class="cols">
+      <div class="cols__main">
+        <article class="dayplan reveal">
+          <div class="dayplan__head">
+            <p class="dayplan__day">Day 1 &nbsp;·&nbsp; 10/06/2026</p>
+            <p class="dayplan__miles">Balanced pace &nbsp;·&nbsp; 4 stops &nbsp;·&nbsp; 5.2 miles on foot</p>
+          </div>
+          <h3>Kyoto: east bank, temple to market</h3>
+          <p class="dayplan__intro">Jet lag is an asset on day one in Japan. You will be awake at five whether you like it or not, so we spend it at the only hour Fushimi Inari is quiet.</p>
+
+          <ul class="stops">
+            <li>
+              <p class="stop__time">6:30 a.m.</p>
+              <div class="stop__body">
+                <h4>Fushimi Inari Taisha, lower gates</h4>
+                <p>Walk the first thousand torii before the tour groups arrive at eight. Turn back at the Yotsutsuji junction unless you want the full two-hour summit loop.</p>
+                <p class="stop__transit">6 min on the JR Nara Line from Kyoto Station &nbsp;·&nbsp; allow 120 min on site &nbsp;·&nbsp; no admission charge</p>
+              </div>
+            </li>
+            <li>
+              <p class="stop__time">9:35 a.m.</p>
+              <div class="stop__body">
+                <h4>Breakfast at a Kyoto Station standing counter</h4>
+                <p>Grilled fish, rice, miso and pickles for about nine dollars. The second-floor concourse counters open at seven and turn over fast.</p>
+                <p class="stop__transit">6 min back on the Nara Line &nbsp;·&nbsp; allow 45 min &nbsp;·&nbsp; $11 per person</p>
+              </div>
+            </li>
+            <li>
+              <p class="stop__time">11:00 a.m.</p>
+              <div class="stop__body">
+                <h4>Nishiki Market, end to end</h4>
+                <p>Five blocks of pickles, tamagoyaki, knives and yuba. Eat where you buy it. Walking while eating is considered poor form here.</p>
+                <p class="stop__transit">15 min on the Karasuma subway line &nbsp;·&nbsp; allow 90 min &nbsp;·&nbsp; $24 per person</p>
+              </div>
+            </li>
+            <li>
+              <p class="stop__time">2:05 p.m.</p>
+              <div class="stop__body">
+                <h4>Kiyomizu-dera and the Sannenzaka lanes</h4>
+                <p>The wooden stage over the hillside, then downhill through the stone-paved shopping slopes. Photography is restricted on the private side alleys, and the signs mean it.</p>
+                <p class="stop__transit">20 min by city bus 100 &nbsp;·&nbsp; allow 105 min on site &nbsp;·&nbsp; $4 per person</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="dayplan__foot">
+            <p class="dayplan__cost">Estimated day 1 cost <strong>$422</strong></p>
+            <p class="dayplan__costnote">Lodging $168 &nbsp;·&nbsp; meals $144 &nbsp;·&nbsp; admissions $78 &nbsp;·&nbsp; local transit $32. Two travelers, one room, moderate tier.</p>
+          </div>
+        </article>
+      </div>
+
+      <aside class="cols__aside">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80&auto=format&fit=crop"
+               alt="A five-storey wooden pagoda rising above autumn maples with the city of Kyoto spread out behind it at dawn"
+               width="900" height="600" loading="lazy" decoding="async">
+          <figcaption>Yasaka Pagoda above the Higashiyama rooftops, forty minutes after sunrise in the second week of October.
+            <span class="credit">Photograph via Unsplash</span>
+          </figcaption>
+        </figure>
+        <div class="spec-group">
+          <h4>What the planner does not do</h4>
+          <dl>
+            <dt>Book anything</dt>
+            <dd>We link out. Your reservation is between you and the hotel, airline or operator.</dd>
+            <dt>Invent stops</dt>
+            <dd>Every entry is written by a named editor or contributor who has been there.</dd>
+            <dt>Hide the money</dt>
+            <dd>Costs are shown per day and per traveler before you commit to anything.</dd>
+          </dl>
+        </div>
+      </aside>
+    </div>
+
+    <p class="cta-row"><a class="cta" href="itineraries.html">Read three full sample itineraries</a></p>
+
+    <p class="colophon">
+      <span>Meridian Field Guide</span>
+      <span>Issue No.&nbsp;14</span>
+      <span>Portland, Oregon &middot; 08/18/2026</span>
+      <span class="colophon__page">Page 4</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ DESTINATIONS ============================ -->
+<section class="band band--tint" aria-labelledby="dest-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="dest-title">From the destination files</h2>
+      <p>Sixteen destinations are fully written up, each with a budget breakdown, a three-day sample plan, transport notes and a frank safety section. Four of them below.</p>
+    </div>
+
+    <ul class="index-list">
+      <li class="index-item reveal">
+        <div class="index-item__media">
+          <img src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=900&q=80&auto=format&fit=crop"
+               alt="A jagged black mountain rising behind a wide dark beach at sunset on the south coast of Iceland"
+               width="900" height="675" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <p class="index-item__meta"><span>Iceland</span><span>7 to 10 days</span><span>$210 per day</span></p>
+          <h3><a href="destination-iceland.html">Iceland, and the argument for going in October</a></h3>
+          <p>Shoulder season halves the lodging rate, keeps the Ring Road open and puts the aurora back on the table. What you trade is daylight, which matters more than most first-timers expect.</p>
+          <p><a class="cta" href="destination-iceland.html">Read the Iceland file</a></p>
+        </div>
+      </li>
+
+      <li class="index-item index-item--reverse reveal">
+        <div class="index-item__media">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&q=80&auto=format&fit=crop"
+               alt="A narrow stone-paved lane in Kyoto lined with traditional wooden townhouses leading toward a tall pagoda at dusk"
+               width="900" height="675" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <p class="index-item__meta"><span>Kyoto, Japan</span><span>6 to 9 days</span><span>$185 per day</span></p>
+          <h3><a href="destination-kyoto.html">Kyoto without the queue, which is mostly a question of hours</a></h3>
+          <p>The city has roughly 1,600 temples and four that everyone photographs. Reorder your day around the 6 a.m. and 4 p.m. windows and Kyoto becomes a different, much quieter city.</p>
+          <p><a class="cta" href="destination-kyoto.html">Read the Kyoto file</a></p>
+        </div>
+      </li>
+
+      <li class="index-item reveal">
+        <div class="index-item__media">
+          <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=900&q=80&auto=format&fit=crop"
+               alt="Red sandstone buttes standing above a dry desert valley under a wide blue sky in the American Southwest"
+               width="900" height="675" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <p class="index-item__meta"><span>Utah and Arizona</span><span>7 to 12 days</span><span>$168 per day</span></p>
+          <h3><a href="destination-national-parks.html">The national parks road trip, and the permits nobody mentions</a></h3>
+          <p>Five Utah parks in a week is achievable. Doing it without an Angels Landing permit, a Moraine-style shuttle reservation and a plan for the 4 p.m. thunderstorm window is not.</p>
+          <p><a class="cta" href="destination-national-parks.html">Read the parks file</a></p>
+        </div>
+      </li>
+
+      <li class="index-item index-item--reverse reveal">
+        <div class="index-item__media">
+          <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=900&q=80&auto=format&fit=crop"
+               alt="A turquoise glacial lake ringed by snow-dusted peaks and pine forest in the Canadian Rockies at sunrise"
+               width="900" height="675" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <p class="index-item__meta"><span>Banff, Alberta</span><span>5 to 8 days</span><span>$245 per day</span></p>
+          <h3><a href="destinations.html">Banff, where the hard part is the parking lot</a></h3>
+          <p>Private vehicles no longer reach Moraine Lake. The shuttle system rewards people who booked in March and quietly punishes everyone else, so the calendar matters more than the map.</p>
+          <p><a class="cta" href="destinations.html">See all sixteen destinations</a></p>
+        </div>
+      </li>
+    </ul>
+
+    <p class="colophon">
+      <span>Meridian Field Guide</span>
+      <span>Issue No.&nbsp;14</span>
+      <span>Portland, Oregon &middot; 08/18/2026</span>
+      <span class="colophon__page">Page 5</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ AD SLOT ============================ -->
+<div class="wrap">
+  <aside class="ad-slot" aria-label="Advertisement">
+    <span class="ad-slot__label">Advertisement</span>
+    <div class="ad-slot__frame">Reserved advertising placement, 728 &times; 90 on desktop and 320 &times; 100 on mobile.</div>
+  </aside>
+</div>
+
+<!-- ============================ BUSINESS MODEL ============================ -->
+<section class="band" aria-labelledby="money-title" id="how-we-make-money">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="money-title">How we make money, in plain English</h2>
+      <p>You are entitled to know who pays for a recommendation before you act on it. Here is the whole list. There is nothing else.</p>
+    </div>
+
+    <div class="cols">
+      <div class="cols__main">
+        <div class="spec-group">
+          <h4>Pro subscriptions</h4>
+          <dl>
+            <dt>What it costs</dt>
+            <dd>$9.00 per month, or $72.00 per year, in US dollars. The free tier keeps two saved trips forever and is not a trial.</dd>
+            <dt>What it pays for</dt>
+            <dd>Roughly two thirds of our revenue, and all of the editorial payroll. Subscriber money is why the destination files do not read like advertising.</dd>
+          </dl>
+        </div>
+
+        <div class="spec-group">
+          <h4>Affiliate commissions</h4>
+          <dl>
+            <dt>Where they come from</dt>
+            <dd>Hotels, flight search, car rental and tour operators. If you book through a link on this site, we may receive a commission from the seller. Your price does not change.</dd>
+            <dt>How we handle them</dt>
+            <dd>Affiliate links are labeled at the point of use, not only in the footer. No editor is compensated on booking volume, and no partner has ever been given a placement in a destination file in exchange for payment.</dd>
+          </dl>
+        </div>
+
+        <div class="spec-group">
+          <h4>Custom itinerary service</h4>
+          <dl>
+            <dt>What it is</dt>
+            <dd>A one-time fee of $149 for a domestic trip, $249 for international. A named editor reviews your draft, rebuilds the day plans and returns it within five business days.</dd>
+            <dt>Who buys it</dt>
+            <dd>Mostly people planning a once-a-decade trip with a fixed date they cannot move, such as an anniversary or a graduation.</dd>
+          </dl>
+        </div>
+
+        <div class="spec-group">
+          <h4>Advertising, B2B plans and referrals</h4>
+          <dl>
+            <dt>Display advertising</dt>
+            <dd>Clearly labeled ad placements on editorial pages. Never on legal pages, never above the main content of the page, never inside a day plan.</dd>
+            <dt>White-label for travel agents</dt>
+            <dd>Independent agents and small tour operators license the planner under their own brand from $79 per seat per month.</dd>
+            <dt>Optional add-ons</dt>
+            <dd>Travel insurance partner referrals and offline PDF export. Both are optional, both are disclosed, and neither is ever bundled into a price without being itemized.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <aside class="cols__aside">
+        <blockquote class="pullquote">
+          If a recommendation would change because of who is paying us, it does not belong in the guide.
+          <cite>From our editorial standards, section 2</cite>
+        </blockquote>
+        <p><a class="cta" href="affiliate-disclosure.html">Read the full affiliate disclosure</a></p>
+        <p><a class="cta" href="pricing.html">Compare the plans</a></p>
+      </aside>
+    </div>
+
+    <p class="colophon">
+      <span>Meridian Field Guide</span>
+      <span>Issue No.&nbsp;14</span>
+      <span>Portland, Oregon &middot; 08/18/2026</span>
+      <span class="colophon__page">Page 6</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ PRICING GLANCE ============================ -->
+<section class="band band--tint" aria-labelledby="price-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="price-title">Free for two trips. Nine dollars if you plan more.</h2>
+      <p>No trial countdown, no card required to start, no feature that stops working after a fortnight.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <caption>Plan comparison, US dollars</caption>
+        <thead>
+          <tr>
+            <th scope="col">What you get</th>
+            <th scope="col">Field Notes (free)</th>
+            <th scope="col">Pro, $9/mo or $72/yr</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Saved trips</th><td>2</td><td>Unlimited</td></tr>
+          <tr><th scope="row">Day-plan builder with costs</th><td class="yes">Included</td><td class="yes">Included</td></tr>
+          <tr><th scope="row">Destination files and sample itineraries</th><td class="yes">Included</td><td class="yes">Included</td></tr>
+          <tr><th scope="row">Offline PDF itinerary export</th><td class="no">Not included</td><td class="yes">Included</td></tr>
+          <tr><th scope="row">Collaborators per trip</th><td>1</td><td>8</td></tr>
+          <tr><th scope="row">Flight and lodging price tracking</th><td class="no">Not included</td><td class="yes">Included</td></tr>
+          <tr><th scope="row">Ad-free reading</th><td class="no">Not included</td><td class="yes">Included</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="cta-row">
+      <a class="cta" href="pricing.html">Full pricing and plans</a>
+      <a class="cta" href="travel-agents.html">White-label for agents</a>
+      <a class="cta" href="refund-policy.html">Refund policy</a>
+    </p>
+
+    <p class="colophon">
+      <span>Meridian Field Guide</span>
+      <span>Issue No.&nbsp;14</span>
+      <span>Portland, Oregon &middot; 08/18/2026</span>
+      <span class="colophon__page">Page 7</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ GUIDES ============================ -->
+<section class="band" aria-labelledby="guides-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="guides-title">Recent dispatches</h2>
+      <p>Long-form pieces on the practical mechanics of American travel: time off, permits, airports and the arithmetic of a first international trip.</p>
+    </div>
+
+    <ul class="index-list">
+      <li class="index-item reveal">
+        <div class="index-item__media">
+          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80&auto=format&fit=crop"
+               alt="View along an airplane wing above a bank of sunlit clouds during a late afternoon flight"
+               width="900" height="675" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <p class="index-item__meta"><span>Planning</span><span>08/04/2026</span><span>11 min read</span></p>
+          <h3><a href="guide-pto-strategy.html">The PTO arithmetic: getting eighteen days off with eleven days of leave</a></h3>
+          <p>Federal holidays, shoulder weekends and the red-eye math that turns a standard American vacation allowance into something closer to European.</p>
+        </div>
+      </li>
+
+      <li class="index-item index-item--reverse reveal">
+        <div class="index-item__media">
+          <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?w=900&q=80&auto=format&fit=crop"
+               alt="Two hard-shell suitcases standing in a doorway beside a potted cactus before departure"
+               width="900" height="675" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <p class="index-item__meta"><span>First timers</span><span>07/22/2026</span><span>13 min read</span></p>
+          <h3><a href="guide-first-international-trip.html">Your first international trip, from passport to landing card</a></h3>
+          <p>Passport lead times, Global Entry versus TSA PreCheck, what an eSIM actually costs, and the four documents to photograph before you leave the house.</p>
+        </div>
+      </li>
+
+      <li class="index-item reveal">
+        <div class="index-item__media">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=900&q=80&auto=format&fit=crop"
+               alt="A hiker with a large red backpack walking a green valley trail toward snow-covered mountains"
+               width="900" height="675" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <p class="index-item__meta"><span>National parks</span><span>07/09/2026</span><span>12 min read</span></p>
+          <h3><a href="guide-national-park-permits.html">The permit calendar: eleven US parks that now require a reservation</a></h3>
+          <p>Timed entry, lottery permits and vehicle reservations, with the exact date each window opens and what happens when you turn up without one.</p>
+        </div>
+      </li>
+    </ul>
+
+    <p class="cta-row"><a class="cta" href="guides.html">All travel guides</a></p>
+
+    <p class="colophon">
+      <span>Meridian Field Guide</span>
+      <span>Issue No.&nbsp;14</span>
+      <span>Portland, Oregon &middot; 08/18/2026</span>
+      <span class="colophon__page">Page 8</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ READERS ============================ -->
+<section class="band band--inset" aria-labelledby="readers-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="readers-title">From readers who used it</h2>
+      <p>Reviews are collected by email after a trip has finished. We publish them with the reader's permission and we do not edit them for tone.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="testimony">
+        <blockquote>The daily cost line is the reason we stopped arguing on trips. We could see what Tuesday was going to cost before Tuesday happened.</blockquote>
+        <div class="testimony__who">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=70&auto=format&fit=crop"
+               alt="Portrait of Renata Alvarez, a Meridian reader" width="200" height="200" loading="lazy" decoding="async">
+          <p><span class="name">Renata Alvarez</span> Denver, Colorado &middot; Iceland, 9 days</p>
+        </div>
+      </div>
+
+      <div class="testimony">
+        <blockquote>I gave the printed PDF to my father, who is seventy-eight and does not use a smartphone. He followed it in Kyoto without calling me once.</blockquote>
+        <div class="testimony__who">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=70&auto=format&fit=crop"
+               alt="Portrait of Marcus Oyelaran, a Meridian reader" width="200" height="200" loading="lazy" decoding="async">
+          <p><span class="name">Marcus Oyelaran</span> Atlanta, Georgia &middot; Japan, 12 days</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="cta-row"><a class="cta" href="testimonials.html">Read all reader reviews</a></p>
+
+    <p class="colophon">
+      <span>Meridian Field Guide</span>
+      <span>Issue No.&nbsp;14</span>
+      <span>Portland, Oregon &middot; 08/18/2026</span>
+      <span class="colophon__page">Page 9</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ CLOSING ============================ -->
+<section class="band" aria-labelledby="close-title">
+  <div class="wrap-narrow">
+    <p class="kicker">Next issue</p>
+    <h2 id="close-title">Open the planner and give it nine minutes</h2>
+    <p class="standfirst">Pick a destination, set your dates, and read what comes back. If the plan is wrong, cut the stops you do not want and it will re-typeset itself around you.</p>
+    <p class="cta-row">
+      <a class="cta" href="trip-planner.html">Build a trip, free</a>
+      <a class="cta" href="tools.html">Packing checklists and free tools</a>
+      <a class="cta" href="contact.html">Talk to an editor</a>
+    </p>
+
+    <p class="colophon">
+      <span>Meridian Field Guide</span>
+      <span>Issue No.&nbsp;14</span>
+      <span>Portland, Oregon &middot; 08/18/2026</span>
+      <span class="colophon__page">Page 10</span>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="pagefoot">
+  <div class="wrap">
+    <div class="pagefoot__top">
+      <div>
+        <h2>Meridian Field Guide</h2>
+        <p>An independent travel publication and trip planning tool, published from Portland, Oregon since 2016.</p>
+        <address>
+          Meridian Field Guide, Inc.<br>
+          1104 NE Failing Street, Suite 210<br>
+          Portland, OR 97212, United States<br>
+          <a href="tel:+15038942170">+1 (503) 894-2170</a><br>
+          <a href="mailto:hello@meridianfieldguide.com">hello@meridianfieldguide.com</a>
+        </address>
+        <p><a class="cta" href="contact.html">Contact the editors</a></p>
+      </div>
+
+      <div class="footcols">
+        <div>
+          <h3>Plan</h3>
+          <ul>
+            <li><a href="trip-planner.html">Trip Planner</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="itineraries.html">Sample Itineraries</a></li>
+            <li><a href="tools.html">Packing Checklists and Free Tools</a></li>
+            <li><a href="pricing.html">Pricing and Plans</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Read</h3>
+          <ul>
+            <li><a href="guides.html">Travel Guides</a></li>
+            <li><a href="guide-pto-strategy.html">The PTO Arithmetic</a></li>
+            <li><a href="guide-first-international-trip.html">First International Trip</a></li>
+            <li><a href="guide-national-park-permits.html">The Permit Calendar</a></li>
+            <li><a href="testimonials.html">Reader Reviews</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="travel-agents.html">For Travel Agents</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="refund-policy.html">Refund and Cancellation</a></li>
+            <li><a href="accessibility.html">Accessibility Statement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagefoot__legal">
+      <ul class="legal-links">
+        <li><a href="privacy-policy.html#do-not-sell">Do Not Sell or Share My Personal Information</a></li>
+        <li><a href="privacy-policy.html#ccpa">Your California Privacy Rights</a></li>
+        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+        <li><a href="#" data-open-cookie-prefs>Cookie Preferences</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+      <p><strong>Affiliate disclosure:</strong> Meridian Field Guide participates in affiliate programs with hotel, flight, car rental and tour partners. If you book through certain links on this site we may earn a commission at no additional cost to you. Affiliate links are labeled where they appear. <a href="affiliate-disclosure.html">Read the full disclosure</a>.</p>
+      <p>Prices, opening hours, permit rules and travel requirements change without notice. Verify current details with the operator or the relevant government authority before you travel. See our <a href="disclaimer.html">disclaimer</a>.</p>
+      <p>&copy; <span data-year>2026</span> Meridian Field Guide, Inc. All rights reserved. Meridian Field Guide is a registered trade name of Meridian Field Guide, Inc., an Oregon corporation.</p>
+
+      <p class="imprint">
+        <span>Meridian Field Guide</span>
+        <span>Issue No.&nbsp;14</span>
+        <span>Portland, Oregon &middot; 08/18/2026</span>
+        <span>Colophon</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<button class="backtotop" type="button" aria-label="Back to top of page">Top</button>
+
+<!-- ============================ COOKIE BANNER ============================ -->
+<aside id="cookie-banner" class="cookie-banner" role="dialog" aria-modal="false" aria-labelledby="cookie-title" hidden>
+  <div class="wrap">
+    <div>
+      <h2 id="cookie-title">Cookies on this site</h2>
+      <p>We use strictly necessary cookies to keep the planner working. We would also like to set optional analytics and advertising cookies, including cookies used by Google, to measure readership and fund the publication. No optional cookie is set until you choose. Read the <a href="cookie-policy.html">Cookie Policy</a>.</p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cta" type="button" id="cookie-accept">Accept all</button>
+      <button class="cta" type="button" id="cookie-reject">Reject optional</button>
+      <button class="cta cta--plain" type="button" id="cookie-manage" aria-expanded="false" aria-controls="cookie-prefs">Manage preferences</button>
+    </div>
+    <div class="cookie-prefs" id="cookie-prefs" hidden>
+      <div class="choice-list">
+        <label class="choice">
+          <input type="checkbox" checked disabled>
+          <span>Strictly necessary <small>Required for sign-in, saved trips and security. Cannot be switched off.</small></span>
+        </label>
+        <label class="choice">
+          <input type="checkbox" id="cookie-analytics">
+          <span>Analytics <small>Aggregate readership measurement. Helps us decide which destination files to update next.</small></span>
+        </label>
+        <label class="choice">
+          <input type="checkbox" id="cookie-ads">
+          <span>Advertising <small>Google and other vendors may use cookies to serve and measure ads on this site.</small></span>
+        </label>
+      </div>
+      <p><button class="cta" type="button" id="cookie-save">Save my choices</button></p>
+    </div>
+  </div>
+</aside>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
